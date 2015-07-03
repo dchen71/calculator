@@ -1,0 +1,42 @@
+/*
+Row wise styling
+*/
+.container{
+  width: 400px;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+}
+
+.col{
+  float: right;
+}
+
+/*
+Buttonwise styling
+*/
+
+.answer{
+  height: 50px;
+  background-color: #fff0f5;
+  border-radius: 15px;
+  margin: 15px 15px 15px 15px;
+  text-align: right;
+}
+
+.equal{
+  background-color: #00ff00;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.plus, .minus, .multi, .divide{
+  background-color: #daa520;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.zero{
+  background-color: #d3d3d3;
+  border-radius: 15px;
+  text-align: center;
+}
