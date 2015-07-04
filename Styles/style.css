@@ -2,7 +2,7 @@
 Row wise styling
 */
 .container{
-  width: 400px;
+  width: 300px;
   background-color: #F8F8F8;
   border-radius: 15px;
 }
@@ -25,18 +25,40 @@ Buttonwise styling
 
 .equal{
   background-color: #00ff00;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
 }
 
 .plus, .minus, .multi, .divide{
   background-color: #daa520;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
 }
 
 .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.zero{
   background-color: #d3d3d3;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
+  width: 60px;
+  height: 60px;
+}
+
+.row{
+  float: left;
+}
+
+.one,.two,.three{
+
+}
+
+.four,.five,.six{
+
+}
+
+.seven,.eight,.nine{
+
+}
+
+.zero{
+
 }
