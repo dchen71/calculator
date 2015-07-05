@@ -5,38 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-
+    <script src="Scripts/calculator.js"></script>
     <link href="Styles/style.css" rel="stylesheet">
   </head>
   <body>
 
   <div class="container">
-  	<div class="answer"><h2>0</h2></div>
+  	<div class="answer"><h2></h2></div>
   	<div class="row">
-	  <div class="one"><h2>1</h2></div>
-	  <div class="two"><h2>2</h2></div>
-	  <div class="three"><h2>3</h2></div>
+	  <div class="seven" onclick="num('7')"><h2>7</h2></div>
+	  <div class="four" onclick="num('4')"><h2>4</h2></div>
+	  <div class="one" onclick="num('1')"><h2>1</h2></div>
   	</div>
   	<div class="row">
-	  <div class="four"><h2>4</h2></div>
-	  <div class="five"><h2>5</h2></div>
-	  <div class="six"><h2>6</h2></div>
+	  <div class="eight"  onclick="num('8')"><h2>8</h2></div>
+	  <div class="five" onclick="num('5')"><h2>5</h2></div>
+	  <div class="two" onclick="num('2')"><h2>2</h2></div>
   	</div>
   	<div class="row">
-	  <div class="seven"><h2>7</h2></div>
-	  <div class="eight"><h2>8</h2></div>
-	  <div class="nine"><h2>9</h2></div>
+	  <div class="nine" onclick="num('9')"><h2>9</h2></div>
+	  <div class="six" onclick="num('6')"><h2>6</h2></div>
+	  <div class="three" onclick="num('3')"><h2>3</h2></div>
   	</div>
   	
   	<div class="col">
-	  <div class="multi"><h2>*</h2></div>
-	  <div class="divide"><h2>/</h2></div>
-	  <div class="equal"><h2>=/C</h2></div>	
+	  <div class="multi" onclick="oper('*')"><h2>*</h2></div>
+	  <div class="divide" onclick="oper('/')"><h2>/</h2></div>
+	  <div class="equal" onclick="clr_eq()"><h2>=/C</h2></div>	
   	</div>
   	<div class="col">
-  	  <div class="zero"><h2>0</h2></div>
-	  <div class="plus"><h2>+</h2></div>
-	  <div class="minus"><h2>-</h2></div>
+  	  <div class="zero" onclick="num('0')"><h2>0</h2></div>
+	  <div class="plus" onclick="oper('+')"><h2>+</h2></div>
+	  <div class="minus" onclick="oper('-')"><h2>-</h2></div>
   	</div>
 
   </div>
