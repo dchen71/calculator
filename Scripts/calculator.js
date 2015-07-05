@@ -7,16 +7,20 @@ var turn = 1;
 
 //Creates the values of the numbers
 function num(val){
-	if(turn == 1)
+	if(turn == 1){
 		if(num1 == null)
 			num1 = val;
 		else
 			num1 = num1.concat(val);
-	else
+		document.getElementById("display").value = num1;
+	}
+	else{
 		if(num2 == null)
 			num2 = val;
 		else
 			num2 = num2.concat(val);
+		document.getElementById("display").value = num1 + operator + num2;
+	}
 
 	console.log(num1);
 	console.log(num2);
@@ -27,11 +31,9 @@ function oper(val){
 	operator = val;
 	if(num1 != null)
 		turn = 2;
+	
+	document.getElementById("display").value = num1 + operator;
 	console.log(operator);
-}
-
-function answer(){
-	document.getElementsByClassName("answer").value = answer;
 }
 
 //Finds the answer and clears values
@@ -53,6 +55,7 @@ function clr_eq(){
 				answer = multiply(num1, num2);
 				break;
 		}
+		document.getElementById("display").value = answer;
 		clear();
 	}
 	else
