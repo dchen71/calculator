@@ -38,10 +38,33 @@ function num(val){
 
 function oper(val){
 	operator = val;
-	turn = 2;
+	if(num1 != null)
+		turn = 2;
 	console.log(operator);
 }
 
 function answer(){
 	document.getElementsByClassName("answer").value = answer;
+}
+
+function clr_eq(){
+	num1 = parseInt(num1);
+	num2 = parseInt(num2);
+	switch(operator){
+		case '+':
+			answer = add(num1, num2);
+			break;
+		case '-':
+			answer = subtract(num1, num2);
+			break;
+		case '/':
+			answer = divide(num1, num2);
+			break;
+		case '*':
+			answer = multiply(num1, num2);
+			break;
+	}
+
+	console.log(answer);
+
 }
